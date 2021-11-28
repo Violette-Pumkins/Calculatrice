@@ -57,14 +57,14 @@
             $file = 'historique.txt';
             // Ouvre un fichier pour lire un contenu existant
             $current = file_get_contents($file);
-            // Ajoute une personne
+            //convertit le résultat en string
             $current .=strval($resultat). "\n";
             // Écrit le résultat dans le fichier
             file_put_contents($file, $current);
         } 
         
         /**
-         * récupère ls résultats pour els afficher
+         * récupère les résultats pour les afficher
          * @return string[] l'historique des résultats sous liste de strings
          */ 
         public static function recupererliste():array
