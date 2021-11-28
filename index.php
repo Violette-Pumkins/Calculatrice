@@ -2,7 +2,7 @@
     //appel fichier externes
     function autoloadClassModel($class)
     {
-        require_once 'Controller/' . $class . '.class.php';
+        require_once 'Model/' . $class . '.class.php';
     }
     spl_autoload_register('autoloadClassModel');
 
@@ -63,7 +63,7 @@
                     
                 break;
             case 'viewres':
-                
+
                 require('view/viewres.php');
                 break;
         }
